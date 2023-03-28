@@ -9,11 +9,12 @@ function nhap() {
     }
     return R;
 }
-function chuVi() {
-    var R = nhap();
+function chuVi(R) {
     return 2 * pi * R;
 }
-function dienTich() {
-    var R = nhap();
+function dienTich(R) {
     return pi * R * R;
 }
+var R = nhap();
+console.log(chuVi(R));
+console.log(dienTich(R));

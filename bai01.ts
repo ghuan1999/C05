@@ -8,11 +8,13 @@ function nhap():number{
     }
     return R;
 }
-function chuVi():number{
-    let R:number=nhap();
+function chuVi(R:number):number{
     return 2*pi*R;
 }
-function dienTich():number{
-    let R:number=nhap();
+function dienTich(R:number):number{
+
     return pi*R*R;
 }
+let R:number=nhap();
+console.log(chuVi(R));
+console.log(dienTich(R));
